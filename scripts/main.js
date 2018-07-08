@@ -1,3 +1,7 @@
-var form = document.getElementById("login-input")
+var url = window.location.href
 
-form.onsubmit = function() {location.href = "inicio.html"}
+var currFile = url.substr(url.lastIndexOf('/') + 1)
+
+var sidebar = document.getElementById('sidebar')
+var currIcon = sidebar.querySelectorAll('[href="'+currFile+'"]')[0]
+currIcon.id = "active-item"

@@ -36,11 +36,15 @@ html {
 	color: #7aa5ff;
 }
 
-#sidebar > a {
+#sidebar a {
 	display: block;
 	text-align: center;
 	margin-top: 130px;
 	margin-bottom: 30px;
+}
+
+#sidebar a#active-item {
+	border-left: 3px solid #2de0a7;
 }
 
 #sidebar > a:hover {
@@ -56,6 +60,8 @@ html {
 
 #login-logo {
 	display: block;
+	margin-top: 50px;
+	margin-bottom: 50px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -67,6 +73,9 @@ html {
 	background-color: #292a44d5;
 	margin-left: auto;
 	margin-right: auto;
+	border-radius: 20px;
+	padding: 10px 25px 10px 25px;
+	border: 3px solid #b45bcf44;
 }
 
 #logo:hover, #login-logo:hover {
@@ -93,6 +102,7 @@ button {
 	text-align: center;
 	margin: 0;
 	padding: 0;
+	margin-bottom: 10px;
 }
 
 #log-sub {
