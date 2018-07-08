@@ -1,0 +1,59 @@
+#login-body {
+	font-size: 20px;
+	font-family: "Raleway", sans-serif;
+	background-color: #292a44;
+	color: #f1eff8;
+	/*border: 5px solid #ae81ff;*/
+	padding: 20px;
+	background-image: url("../images/tren.png");
+	background-size: cover;
+}
+
+#logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#login {
+	margin-top: 10px;
+	display: block;
+	width: 450px;
+	background-color: #292a44d5;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#logo:hover {
+	-webkit-filter: drop-shadow(2px 1px 0 #ae81ff)
+                        drop-shadow(-1px -1px 0 #ae81ff);
+	filter: drop-shadow(2px 1px 0 #ae81ff)
+                        drop-shadow(-1px -1px 0 #ae81ff);
+}
+
+a[href] {
+	color: #978ee0;
+}
+
+button {
+	background-color: #666699;
+	border: 2px solid white;
+	padding: 10px;
+	font-size: 25px;
+	font-style: bold;
+}
+
+#log-head {
+	font-size: 60px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+#log-sub {
+	text-align: center;
+}
+
+h1.center, h2.center, h3.center, h4.center {
+	text-align: center;
+}
