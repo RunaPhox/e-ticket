@@ -101,20 +101,49 @@ h1.center, h2.center, h3.center, h4.center {
 	font-size: 22px;
 }
 
-.datauser p{
+form{
+	margin: auto;
+	width: 50%;
+	max-width: 500px;
+	background: #292a44d5;
+	padding: 30px;
+	border: none;
+}
+p{
 	margin: 0;
 	padding: 0;
 	font-weight: bold;
 }
 
-.datauser input{
-	width: 0;
+input{
+	display: block;
+	padding: 8px;
+	width: 100%;
 	margin-bottom: 20px;
+	font-size: 20px;
 }
-.datauser input[type="text"], input[type="password"]{
+input[type="text"], input[type="password"]{
 	border: none;
 	border-bottom: 1px solid #666699;
 	background: transparent;
 	outline: none;
 	height: 40px;
+}
+
+input[type="submit"]{
+	background: #666699;
+	border: 0;
+	color: #f1eff8;
+	opacity: 0.8;
+	cursor: pointer;
+	border-radius: 20px;
+	margin-bottom: 0;
+}
+
+input[type="submit"]:hover{
+	opacity: 1;
+}
+
+input[type="submit"]:active{
+	transform: scale(0.98);
 }
