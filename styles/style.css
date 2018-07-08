@@ -51,6 +51,11 @@ html {
 	color: #3662bb;
 }
 
+#sidebar a div.menu-desc {
+	display: none;
+	visibility: hidden;
+}
+
 #login-html {
 	background-image: url("../images/tren.png");
 	background-size: cover;
