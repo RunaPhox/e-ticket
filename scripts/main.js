@@ -1,3 +1,3 @@
-var loginEnter = document.getElementsById("login_b")
+var loginEnter = document.getElementById("login_b")
 
 loginEnter.onclick = function() {location.href = "inicio.html"}
