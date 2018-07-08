@@ -43,6 +43,10 @@ html {
 	margin-bottom: 30px;
 }
 
+#sidebar > a:hover {
+	color: #3662bb;
+}
+
 #login-html {
 	background-image: url("../images/tren.png");
 	background-size: cover;
