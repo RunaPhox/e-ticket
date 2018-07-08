@@ -36,11 +36,15 @@ html {
 	color: #7aa5ff;
 }
 
-#sidebar > a {
+#sidebar a {
 	display: block;
 	text-align: center;
 	margin-top: 130px;
 	margin-bottom: 30px;
+}
+
+#sidebar a#active-item {
+	border-left: 3px solid #2de0a7;
 }
 
 #sidebar > a:hover {
