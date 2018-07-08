@@ -1,3 +1,3 @@
-var loginEnter = document.getElementById("login_b")
+var form = document.getElementById("login-input")
 
-loginEnter.onclick = function() {location.href = "inicio.html"}
+form.onsubmit = function() {location.href = "inicio.html"}
