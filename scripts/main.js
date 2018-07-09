@@ -12,7 +12,7 @@ var div = []
 for (var i = 0; i < allIcons.length; ++i) {
 	div.push(document.createElement('div'))
 	var rect = allIcons[i].getBoundingClientRect()
-	div[i].style.cssText = 'position:fixed;color:#7aa5ff;background-color:#00000055;font-size:24px;right:85px;top:' + (rect.y - 3) + 'px;padding:6px;border:2px solid #383a62;opacity: 0;transition:opacity 0.3s'
+	div[i].style.cssText = 'position:fixed;color:#7aa5ff;background-color:#00000055;font-size:24px;right:85px;top:' + (rect.y - 3) + 'px;padding:6px;border:2px solid #383a62;opacity:0;transition:opacity 0.3s;'
 	allIcons[i].onmouseover = function() {
 		for (var i = 0; i < div.length; ++i) {
 			if (div[i].textContent == this.textContent) {
@@ -29,5 +29,5 @@ for (var i = 0; i < allIcons.length; ++i) {
 		}
 	}
 	div[i].textContent = allIcons[i].getElementsByClassName('menu-desc')[0].textContent
-	document.body.appendChild(div[i])
+	document.getElementById('sidebar').appendChild(div[i])
 }
