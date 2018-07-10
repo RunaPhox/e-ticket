@@ -169,3 +169,18 @@ input[type="submit"]:active{
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
+
+#mapa {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#mapa:hover {
+	-webkit-filter: drop-shadow(2px 1px 0 #ae81ff)
+                        drop-shadow(-1px -1px 0 #ae81ff);
+	filter: drop-shadow(2px 1px 0 #ae81ff)
+                        drop-shadow(-1px -1px 0 #ae81ff);
+}
