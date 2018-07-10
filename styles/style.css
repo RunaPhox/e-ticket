@@ -183,17 +183,21 @@ h1.center, h2.center, h3.center, h4.center {
 	text-align: center;
 }
 
-input {
+input[type="number"], input[type="text"], input[type="password"] {
 	border: none;
 	border-bottom: 1px solid #666699;
 	background: transparent;
 	outline: none;
-	height: 30px;
 	display: block;
-	padding: 8px;
 	width: 100%;
 	margin-bottom: 20px;
 	font-size: 30px;
+}
+
+input[type="button"] {
+	padding: 8px;
+	font-size: 30px;
+	width: 100%;
 }
 
 input[type="button"] {
