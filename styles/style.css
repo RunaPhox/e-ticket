@@ -1,3 +1,59 @@
+.row {
+	display: flex;
+}
+
+.column {
+	flex: 50%;
+}
+
+#saldo {
+	color: #00ff00;
+}
+
+#status {
+	margin-left: auto;
+	width: 400px;
+	height: 100px;
+}
+
+#status td {
+	border-radius: 0 0 15px 15px;
+}
+
+#wrapper {
+	height: 600px;
+	overflow-y: auto;
+	margin: 10px;
+}
+
+table {
+	border-radius: 15px;
+	background-color: #53495d;
+	color: #ccccff;
+	height: 100px;
+	overflow-y: scroll;
+}
+
+td, th {
+	padding: 5px 10px 5px 10px;
+}
+
+tbody tr:nth-child(odd) td {
+	background-color: #003366;
+}
+
+tbody tr:nth-child(even) td {
+	background-color: #224488;
+}
+
+tbody tr:last-child td:last-child {
+	border-radius: 0 0 15px 0;
+}
+
+tbody tr:last-child td:first-child {
+	border-radius: 0 0 0 15px;
+}
+
 html {
 	font-size: 20px;
 	font-family: "Raleway", sans-serif;
