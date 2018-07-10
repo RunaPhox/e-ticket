@@ -31,11 +31,11 @@
 					<form>
 						<label>
 							Número de Tarjeta de Crédito:
-							<input type="text" placeholder="XX-XX-XX-XX-XX-XX-XX">
+							<input id="tar" type="text" placeholder="XX-XX-XX-XX-XX-XX-XX">
 						</label>
 						<label>
 							Cantidad a abonar:
-							<input type="text" placeholder="Bolívares Soberanos">
+							<input id="bss" type="text" placeholder="Bolívares Soberanos">
 						</label>
 					</form>
 					<a href="inicio.html"><input id="btn" type="button" value="Procesar Pago" name="" placeholder="Procesar"></a>
@@ -54,7 +54,8 @@
 			</div>
 		</div>
 		<script language="javascript">
-			var input = document.getElementById("pass");
+			var input = document.getElementById("tar");
+			var input2 = document.getElementById("bss");
 
 			input.addEventListener("keyup", function(event){
 					event.preventDefault();
