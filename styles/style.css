@@ -16,6 +16,11 @@
 	height: 650px;
 }
 
+.t-desc li {
+	font-size: 30px;
+	margin: 18px;
+}
+
 .t-desc p {
 	background-color: #224488;
 	border-radius: 25px;
