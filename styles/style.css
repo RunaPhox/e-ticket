@@ -241,3 +241,10 @@ input[type="button"]:active{
 	filter: drop-shadow(2px 1px 0 #ae81ff)
                         drop-shadow(-1px -1px 0 #ae81ff);
 }
+
+#banco:hover {
+	-webkit-filter: drop-shadow(2px 1px 0 #ae81ff)
+                        drop-shadow(-1px -1px 0 #ae81ff);
+	filter: drop-shadow(2px 1px 0 #ae81ff)
+                        drop-shadow(-1px -1px 0 #ae81ff);
+}
