@@ -31,14 +31,14 @@
 					<form>
 						<label>
 							Número de Tarjeta de Crédito:
-							<input id="tar" type="text" placeholder="XX-XX-XX-XX-XX-XX-XX">
 						</label>
+							<input id="tar" type="text" name="tar" placeholder="XX-XX-XX-XX-XX-XX-XX">
 						<label>
 							Cantidad a abonar:
-							<input id="bss" type="text" placeholder="Bolívares Soberanos">
 						</label>
+							<input id="bss" type="text" name="tar" placeholder="Bolívares Soberanos">
+						<input id="btn1" type="button" value="Procesar Pago" placeholder="Procesar" onclick="check(this.form)">
 					</form>
-					<a href="inicio.html"><input id="btn" type="button" value="Procesar Pago" name="" placeholder="Procesar"></a>
 					<img id="banco" src="images/bvz.png" class="center-pad" width="800px">
 				</div>
 				<div class="column">
@@ -53,18 +53,29 @@
 				</div>
 			</div>
 		</div>
-		<script language="javascript">
-			var input = document.getElementById("tar");
-			var input2 = document.getElementById("bss");
+	<script language="javascript">
+		var input = document.getElementById("tar");
 
-			input.addEventListener("keyup", function(event){
-					event.preventDefault();
+		input.addEventListener("keyup", function(event){
+				event.preventDefault();
 
-			if (event.keyCode === 13){
-				document.getElementById("btn").click();
-	  		}
-			});
-		</script>
+		if (event.keyCode === 13){
+			document.getElementById("btn1").click();
+  		}
+		});
+		function check(form){
+ 
+ 		if(form.tar.value == "666" && form.bss.value == "69"){
+ 			alert("Abono exitoso xD")
+		}else{
+ 			if(form.tar.value == "" && form.bss.value == ""){
+ 				alert("Rellene todas las casillas.")
+			}else{
+				window.location.href="inicio.html"
+			}
+		}
+	}
+	</script>
 		<script src="scripts/main.js"></script>
 	</body>
 </html>
