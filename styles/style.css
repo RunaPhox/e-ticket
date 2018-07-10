@@ -17,11 +17,8 @@
 }
 
 .t-desc li {
-	background-color: #224488;
-	border-radius: 25px;
-	padding: 30px;
-	color: #a0a0c5;
-	margin: 40px;
+	font-size: 30px;
+	margin: 18px;
 }
 
 .t-desc p {
