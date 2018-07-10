@@ -31,13 +31,14 @@
 					<form>
 						<label>
 							Número de Tarjeta de Crédito:
-							<input type="number" placeholder="XX-XX-XX-XX-XX-XX-XX">
+							<input id="tar" type="text" placeholder="XX-XX-XX-XX-XX-XX-XX">
 						</label>
 						<label>
 							Cantidad a abonar:
-							<input type="number" placeholder="Bolívares Soberanos">
+							<input id="bss" type="text" placeholder="Bolívares Soberanos">
 						</label>
 					</form>
+					<a href="inicio.html"><input id="btn" type="button" value="Procesar Pago" name="" placeholder="Procesar"></a>
 					<img id="banco" src="images/bvz.png" class="center-pad" width="800px">
 				</div>
 				<div class="column">
@@ -52,6 +53,18 @@
 				</div>
 			</div>
 		</div>
+		<script language="javascript">
+			var input = document.getElementById("tar");
+			var input2 = document.getElementById("bss");
+
+			input.addEventListener("keyup", function(event){
+					event.preventDefault();
+
+			if (event.keyCode === 13){
+				document.getElementById("btn").click();
+	  		}
+			});
+		</script>
 		<script src="scripts/main.js"></script>
 	</body>
 </html>
