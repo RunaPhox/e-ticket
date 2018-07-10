@@ -16,7 +16,7 @@
 
 		<div id="login">
 				<h2 class="center">Datos de Usuario</h2>
-				<form id="login-input">
+				<form>
 					<p>Cédula</p>
 					<input type="text" name="cedula" placeholder="Ingresar Cédula">
 					<p>Contraseña</p>
@@ -33,10 +33,8 @@
  		if(form.cedula.value == "admin" && form.pass.value == "admin"){
  			window.location.href="inicio.html"
  		}
-		else{
-			if(form.cedula.value == "" || form.pass.value == ""){
-				alert("Porfavor rellene todos los campos.")
-			}
+		else if(form.cedula.value == "" || form.pass.value == "") {
+			alert("Por favor rellene todos los campos.")
 		}
 
 	}
