@@ -16,6 +16,14 @@
 	height: 650px;
 }
 
+.t-desc li {
+	background-color: #224488;
+	border-radius: 25px;
+	padding: 30px;
+	color: #a0a0c5;
+	margin: 40px;
+}
+
 .t-desc p {
 	background-color: #224488;
 	border-radius: 25px;
