@@ -112,7 +112,7 @@ html {
 	visibility: hidden;
 }
 
-#login-html {
+#login-html, #login-opass-html, #login-nacco-html {
 	background-image: url("../images/tren.png");
 	background-size: cover;
 	border: unset;
@@ -182,7 +182,7 @@ input[type="text"], input[type="password"]{
 	height: 30px;
 }
 
-input[type="submit"] {
+input[type="button"] {
 	background: #666699;
 	border: 0;
 	color: #f1eff8;
@@ -192,12 +192,66 @@ input[type="submit"] {
 	margin-bottom: 0;
 }
 
-input[type="submit"]:hover{
+input[type="button"]:hover{
 	opacity: 1;
 	cursor: pointer;
 }
 
-input[type="submit"]:active{
+input[type="button"]:active{
 	transform: scale(0.97);
 	opacity: 0.6;
+}
+
+#tipostran {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.trans {
+	box-sizing: border-box;
+	padding: 10px;
+	float: left;
+	width: 50%;
+	height: 50%;
+}
+.trans h4 {
+	border: 1px solid #ccc;
+}
+
+.transimag {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#mapa {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#mapa:hover {
+	-webkit-filter: drop-shadow(2px 1px 0 #ae81ff)
+                        drop-shadow(-1px -1px 0 #ae81ff);
+	filter: drop-shadow(2px 1px 0 #ae81ff)
+                        drop-shadow(-1px -1px 0 #ae81ff);
+}
+
+#vzla {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#vzla:hover {
+	-webkit-filter: drop-shadow(2px 1px 0 #ae81ff)
+                        drop-shadow(-1px -1px 0 #ae81ff);
+	filter: drop-shadow(2px 1px 0 #ae81ff)
+                        drop-shadow(-1px -1px 0 #ae81ff);
 }
