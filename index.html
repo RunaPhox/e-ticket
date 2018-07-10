@@ -20,21 +20,39 @@
 					<p>Cédula</p>
 					<input type="text" name="cedula" placeholder="Ingresar Cédula">
 					<p>Contraseña</p>
-					<input type="password" name="pass" placeholder="Ingresar Contraseña">
-					<input type="button" value="Ingresar" name="" placeholder="Login" onclick="check(this.form)">
+					<input id="pass" type="password" name="pass" placeholder="Ingresar Contraseña">
+					<input id="btn" type="button" value="Ingresar" name="" placeholder="Login" onclick="check(this.form)">
 					<a href="opass.html">¿Olvidaste tu contraseña?</a><br>
 					<a href="nacco.html">¿No posees una cuenta?</a>
 				</form>
 		</div>
 	</body>
 	<script language="javascript">
+		var input = document.getElementById("pass");
+
+			input.addEventListener("keyup", function(event){
+				event.preventDefault();
+
+		if (event.keyCode === 13){
+			document.getElementById("btn").click();
+  		}
+		});
 		function check(form){
  
  		if(form.cedula.value == "admin" && form.pass.value == "admin"){
  			window.location.href="inicio.html"
  		}
+<<<<<<< HEAD
 		else if(form.cedula.value == "" || form.pass.value == "") {
 			alert("Por favor rellene todos los campos.")
+=======
+		else{
+			if(form.cedula.value == "" || form.pass.value == ""){
+				alert("Porfavor rellene todos los campos.")
+			}else{
+				window.location.href="inicio.html"
+			}
+>>>>>>> 54ac79b1512563838deed7dae71fca99734fe9a0
 		}
 
 	}
