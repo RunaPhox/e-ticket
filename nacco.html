@@ -1,5 +1,5 @@
 <!doctype html>
-<html id="login-html">
+<html id="login-nacco-html">
 	<head>
 		<meta charset="utf-8">
 		<title>Metro de Caracas: e-Ticket</title>
@@ -17,28 +17,14 @@
 		<div id="login">
 				<h2 class="center">Datos de Usuario</h2>
 				<form id="login-input">
+					<p>Correo</p>
+					<input type="text" name="correo" placeholder="Ingresar Correo">
 					<p>Cédula</p>
 					<input type="text" name="cedula" placeholder="Ingresar Cédula">
 					<p>Contraseña</p>
 					<input type="password" name="pass" placeholder="Ingresar Contraseña">
-					<input type="button" value="Ingresar" name="" placeholder="Login" onclick="check(this.form)">
-					<a href="opass.html">¿Olvidaste tu contraseña?</a><br>
-					<a href="nacco.html">¿No posees una cuenta?</a>
+					<a href="inicio.html"><input type="button" value="Registrarse e Ingresar" name="" placeholder="Registrarse"></a>
 				</form>
 		</div>
 	</body>
-	<script language="javascript">
-		function check(form){
- 
- 		if(form.cedula.value == "admin" && form.pass.value == "admin"){
- 			window.location.href="inicio.html"
- 		}
-		else{
-			if(form.cedula.value == "" || form.pass.value == ""){
-				alert("Porfavor rellene todos los campos.")
-			}
-		}
-
-	}
-	</script>
 </html>
