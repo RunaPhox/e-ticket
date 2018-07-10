@@ -30,7 +30,7 @@
 	<script language="javascript">
 		var input = document.getElementById("pass");
 
-			input.addEventListener("keyup", function(event){
+		input.addEventListener("keyup", function(event){
 				event.preventDefault();
 
 		if (event.keyCode === 13){
@@ -41,11 +41,7 @@
  
  		if(form.cedula.value == "admin" && form.pass.value == "admin"){
  			window.location.href="inicio.html"
- 		}
-		else if(form.cedula.value == "" || form.pass.value == "") {
-			alert("Por favor rellene todos los campos.")
-
-		else{
+		}else{
 			if(form.cedula.value == "" || form.pass.value == ""){
 				alert("Porfavor rellene todos los campos.")
 			}else{
